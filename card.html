@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+<script type="text/javascript">
+	
+	var clicks=0;
+	document.addEventListener("click",
+		function(){
+		clicks = clicks+1
+		console.log(clicks)
+
+		if (clicks%2 == 1) {document.body.style.
+			backgroundColor="green";
+		}
+
+		if (clicks%2 == 0) {document.body.style.
+			backgroundColor="blue";
+		}
+				})
+</script>
+
+
+</body>
+</html>
