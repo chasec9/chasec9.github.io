@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.pumpkin{
+			width:125px;
+			height:125px;
+			background-image: url(JB.png);
+			background-size:contain;
+			background-repeat: no-repeat;
+			display: inline-block;
+			background-color: blue;
+		}
+		.pumpkin:hover{
+			background-image:url(IMG_0447.JPG); ;
+
+		}
+</style>
+</head>
+<body>
+	<h3>JB</h3>
+<script type="text/javascript">
+	
+function makeJB (){
+	var JB = document.createElement("div");
+	document.body.appendChild(JB);
+	JB.classList.add("pumpkin")
+}
+
+	setInterval(makeJB, 500)
+</script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+		
+		#box{
+			width:200px;
+			height:200px;
+			background-image: url(https://static.wikia.nocookie.net/fortnite/images/d/d7/Battle_Bus_-_Vehicle_-_Fortnite.png/revision/latest?cb=20210927140325);
+			background-position: center;
+			background-size:contain;
+			position:absolute;
+		}
+		
+		body{
+			background-image: url(https://preview.redd.it/d0y65yxub5h41.png?width=640&crop=smart&auto=webp&s=c5f8a040b707cc687d0cc4139af3acd445154a5a);
+			background-repeat: no-repeat;
+			background-size: cover;
+
+		}
+
+	</style>
+
+</head>
+<body>
+	<div id="box"></div>
+	<script type="text/javascript">
+		document.addEventListener("mousemove", function(event){
+			box.style.left= event.clientX + "px";
+			box.style.top= event.clientY + "px";
+
+		})
+	</script>
+</body>
+</html>
