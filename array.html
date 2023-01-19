@@ -9,6 +9,7 @@
 			height: 500px;
 			border:1px solid black;
 			font-size: 50px;
+			background-size:cover;
 		}
 
 
@@ -22,10 +23,9 @@
 	<div id="box"></div>
 	</center>
 		
-]
 	<script type="text/javascript">
 		
-		var breakfast = ["cars 2", "toy story 3", "frozen", "shrek 2", "finding nemo", "how to train your dragon"]
+		var breakfast = ["cars2.png", "toystory3.png", "frozen.png", "shrek2.png", "findingnemo.png", "howtotrainyourdragon.png"]
 
 		box.addEventListener("click", function(){
 
@@ -33,7 +33,7 @@
 		var randomNumber = Math.round(Math.random()*5);
 
 			
-			box.innerText = breakfast[randomNumber];
+			box.style.backgroundImage = "url("+breakfast[randomNumber] +")" ;
 
 			console.log(randomNumber)
 
@@ -43,7 +43,5 @@
 
 
 	</script>
-		}
-		}
 </body>
 </html>
