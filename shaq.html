@@ -13,8 +13,8 @@
 		background-repeat: no-repeat;
 	}
 
-	#conor_mcgregor{
-		background-image:url(conor2.png);
+	#shaquille_oneal{
+		background-image:url(shaq2.png);
 		background-size:contain;
 		background-repeat: no-repeat;
 		position: absolute;
@@ -24,7 +24,7 @@
 		top:40%;
 
 	}
-	#box{
+		#box{
 	width:400px;
 	height:600px;
 	border:1px white;
@@ -37,23 +37,23 @@
 
 <body>
 
-	<div id ="conor_mcgregor"></div>
+	<div id ="shaquille_oneal"></div>
 
 <script type="text/javascript">
-conor_mcgregor.style.left = "0px";
+shaquille_oneal.style.left = "0px";
 var x = 0;
 
 document.addEventListener("keydown", function(){
 if (event.code === "ArrowRight"){
 x = x+20;
-conor_mcgregor.style.left = x + "px";
+shaquille_oneal.style.left = x + "px";
 
   }
 
 
   else if (event.code === "ArrowLeft"){
   x = x-20;
-conor_mcgregor.style.left = x+ "px";
+shaquille_oneal.style.left = x+ "px";
 
 }
 
@@ -77,5 +77,6 @@ box.style.backgroundImage = "url(" + people[randomNumber] +")";
 
 
 </script>
+
 </body>
 </html>

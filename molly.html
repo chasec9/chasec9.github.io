@@ -13,8 +13,8 @@
 		background-repeat: no-repeat;
 	}
 
-	#conor_mcgregor{
-		background-image:url(conor2.png);
+	#molly{
+		background-image:url(molly2.png);
 		background-size:contain;
 		background-repeat: no-repeat;
 		position: absolute;
@@ -37,27 +37,31 @@
 
 <body>
 
-	<div id ="conor_mcgregor"></div>
+	<div id ="molly"></div>
 
 <script type="text/javascript">
-conor_mcgregor.style.left = "0px";
+molly.style.left = "0px";
 var x = 0;
 
 document.addEventListener("keydown", function(){
 if (event.code === "ArrowRight"){
 x = x+20;
-conor_mcgregor.style.left = x + "px";
+molly.style.left = x + "px";
 
   }
 
 
   else if (event.code === "ArrowLeft"){
   x = x-20;
-conor_mcgregor.style.left = x+ "px";
+molly.style.left = x+ "px";
 
 }
 
 })
+
+
+
+
 
 </script>
 
@@ -77,5 +81,7 @@ box.style.backgroundImage = "url(" + people[randomNumber] +")";
 
 
 </script>
+
+
 </body>
 </html>
