@@ -38,12 +38,12 @@
 <body>
 
 	<div id ="chase"></div>
+	<div id="box"></div>
 
 <script type="text/javascript">
-chase.style.left = "0px";
 var x = 0;
 
-document.addEventListener("keydown", function(){
+document.addEventListener("keydown", function(event){
 if (event.code === "ArrowRight"){
 x = x+20;
 chase.style.left = x + "px";
@@ -59,19 +59,33 @@ chase.style.left = x+ "px";
 
 })
 
-</script>
-<div id="box"></div>
-
-
-<script type="text/javascript">
-
 var people=["molly2.png", "sami2.png", "shaq2.png", "stewy2.png", "jacob2.png", "suga2.png", "hasbulla2.png", "conor2.png", "chase2.png", "floyd2.png", "fury2.png", "kavi2.png", "khabib2.png", "lewis2.png", "luca2.png"]
 
 
-box.addEventListener("click", function(){
+document.addEventListener("click", function(){
 var randomNumber = Math.round(Math.random()*14);
 
 box.style.backgroundImage = "url(" + people[randomNumber] +")";
+})
+
+
+// box.style.left = "0px";
+var z = 0;
+
+document.addEventListener("keydown", function(event){
+if (event.keyCode == 65){
+z = z+20;
+box.style.left = z + "px";
+
+  }
+
+
+ else if (event.keyCode == 68){
+  z = z-20;
+box.style.left = z+ "px";
+
+}
+
 })
 
 
